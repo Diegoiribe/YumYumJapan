@@ -1,8 +1,13 @@
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
+import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
-const ItemLeading = () => {
+const ItemLeading = ({ item }) => {
   return (
-    <div className="w-[23%] border border-red-600 rounded-md h-[350px] ">
+    <Link
+      to={`/item/${item.id}`}
+      className="w-[23%] border border-red-600 rounded-md h-[350px] "
+    >
       <div
         className="h-1/2 w-full bg-red-200 bg-cover bg-center"
         style={{
@@ -22,8 +27,16 @@ const ItemLeading = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   )
+}
+ItemLeading.propTypes = {
+  item: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    img: PropTypes.string.isRequired
+  }).isRequired
 }
 
 export default ItemLeading

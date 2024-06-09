@@ -2,6 +2,7 @@ import Layout from '../hocs/Layout'
 import SwiperSlideComponent from '../components/SwiperSlide'
 import Leading from '../components/ItemHome/Leading'
 import Newsletter from '../components/Newsletter'
+import OfferLeading from '../components/ItemHome/OfferLeading'
 
 const Home = () => {
   return (
@@ -9,8 +10,11 @@ const Home = () => {
       <div>
         <SwiperSlideComponent />
       </div>
-      <Leading />
-      <Newsletter />
+      <div className="flex flex-col gap-24">
+        <OfferLeading />
+        <Leading />
+        <Newsletter />
+      </div>
     </Layout>
   )
 }

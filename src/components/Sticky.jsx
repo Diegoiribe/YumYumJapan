@@ -10,7 +10,7 @@ const Sticky = () => {
   const [isVisible, setIsVisible] = useState(false)
 
   return (
-    <div className="flex items-center justify-center bg-gray-200">
+    <div className="flex items-center justify-center bg-gray-200 z-50 absolute">
       <div className="fixed bottom-2 right-2 flex flex-col items-center">
         <button
           className="bg-gray-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl transition-colors duration-300 hover:bg-gray-500"
