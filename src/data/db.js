@@ -2,56 +2,76 @@ const items = [
   {
     id: 1,
     name: 'Item 1',
-    price: 100,
-    img: 'https://fabricadesuenos.com.mx/cdn/shop/products/Personaliza-Kit-Dulces-Surtido-Sabrosito-02.jpg?v=1675899141&width=1946'
+    price: 12345.67,
+    img: 'https://cubiro.com/wp-content/uploads/2016/09/daifuku-mochi.jpg',
+    description: 'Mochi de frijol rojo',
+    ingredients: 'Info Ingredientes y nutriconal'
   },
   {
     id: 2,
-    name: 'Item 2',
-    price: 200,
-    img: 'https://fabricadesuenos.com.mx/cdn/shop/products/Personaliza-Kit-Dulces-Surtido-Sabrosito-04.jpg?v=1675294332&width=1946'
+    name: 'Mochi de frijol rojo',
+    price: 12345.67,
+    img: 'https://cubiro.com/wp-content/uploads/2016/09/daifuku-mochi.jpg',
+    description:
+      'Royal Family MOchi de frijol rojo japones en caja de 7.4 oz (210 g). Mochi relleno de pasta de frijoles rojos. Producto de Taiwan.',
+    ingredients:
+      'Pastel de arroz tradicional japones hecho de arroz glutinoso machacado en pasta y moldeado en forma...'
   },
   {
     id: 3,
     name: 'Item 3',
-    price: 300,
-    img: 'https://fabricadesuenos.com.mx/cdn/shop/products/Personaliza-Canasta-de-Dulces-04_df65d347-edd4-431f-bc71-e544a1401541.jpg?v=1675300247&width=1946'
+    price: 12345.67,
+    img: 'https://cubiro.com/wp-content/uploads/2016/09/daifuku-mochi.jpg',
+    description: 'Pequeña Descripcion',
+    ingredients: 'Info Ingredientes y nutriconal'
   },
   {
     id: 4,
     name: 'Item 4',
-    price: 400,
-    img: 'https://fabricadesuenos.com.mx/cdn/shop/products/Personaliza-Tina-de-Dulces-09.jpg?v=1675299468&width=1946'
+    price: 12345.67,
+    img: 'https://cubiro.com/wp-content/uploads/2016/09/daifuku-mochi.jpg',
+    description: 'Pequeña Descripcion',
+    ingredients: 'Info Ingredientes y nutriconal'
   },
   {
     id: 5,
     name: 'Item 5',
-    price: 500,
-    img: 'https://fabricadesuenos.com.mx/cdn/shop/products/Personaliza-Canasta-de-Dulces-04.jpg?v=1675299979&width=1946'
+    price: 12345.67,
+    img: 'https://cubiro.com/wp-content/uploads/2016/09/daifuku-mochi.jpg',
+    description: 'Pequeña Descripcion',
+    ingredients: 'Info Ingredientes y nutriconal'
   },
   {
     id: 6,
     name: 'Item 6',
-    price: 600,
-    img: 'https://fabricadesuenos.com.mx/cdn/shop/products/Mini-Munchkin-02.jpg?v=1675294332&width=1946'
+    price: 12345.67,
+    img: 'https://cubiro.com/wp-content/uploads/2016/09/daifuku-mochi.jpg',
+    description: 'Pequeña Descripcion',
+    ingredients: 'Info Ingredientes y nutriconal'
   },
   {
     id: 7,
     name: 'Item 1',
-    price: 100,
-    img: 'https://fabricadesuenos.com.mx/cdn/shop/products/Personaliza-Kit-Dulces-Surtido-Sabrosito-02.jpg?v=1675899141&width=1946'
+    price: 12345.67,
+    img: 'https://cubiro.com/wp-content/uploads/2016/09/daifuku-mochi.jpg',
+    description: 'Pequeña Descripcion',
+    ingredients: 'Info Ingredientes y nutriconal'
   },
   {
     id: 8,
     name: 'Item 2',
-    price: 200,
-    img: 'https://fabricadesuenos.com.mx/cdn/shop/products/Personaliza-Kit-Dulces-Surtido-Sabrosito-04.jpg?v=1675294332&width=1946'
+    price: 12345.67,
+    img: 'https://cubiro.com/wp-content/uploads/2016/09/daifuku-mochi.jpg',
+    description: 'Pequeña Descripcion',
+    ingredients: 'Info Ingredientes y nutriconal'
   },
   {
     id: 9,
     name: 'Item 3',
-    price: 300,
-    img: 'https://fabricadesuenos.com.mx/cdn/shop/products/Personaliza-Canasta-de-Dulces-04_df65d347-edd4-431f-bc71-e544a1401541.jpg?v=1675300247&width=1946'
+    price: 12345.67,
+    img: 'https://cubiro.com/wp-content/uploads/2016/09/daifuku-mochi.jpg',
+    description: 'Pequeña Descripcion',
+    ingredients: 'Info Ingredientes y nutriconal'
   }
 ]
 

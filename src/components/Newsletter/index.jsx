@@ -1,4 +1,31 @@
+import { useState } from 'react'
+
 const Newsletter = () => {
+  const [email, setEmail] = useState('')
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    let datos = {
+      email: email
+    }
+    fetch('https://api/newsletter', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(datos)
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Success:', data)
+        alert('¡Gracias por suscribirte!')
+      })
+      .catch((error) => {
+        console.error('Error:', error)
+        alert('Hubo un error al suscribirse. Por favor, intenta nuevamente.')
+      })
+  }
+
   return (
     <div
       className="w-full bg-center  h-[300px] p-20 space-y-10 "
@@ -14,16 +41,21 @@ const Newsletter = () => {
           exclusivas, descuenteos y las ultimas en golosinas japonesas
         </p>
       </div>
-      <div className="flex gap-5">
+      <form className="flex gap-5" onSubmit={() => handleSubmit()}>
         <input
-          type="text"
+          type="email"
           placeholder="Correo electronico"
-          className="w-1/2 rounded-3xl p-2 shadow-inner"
+          className="w-1/2 rounded-3xl p-2 shadow-inner outline-none"
+          value={email}
+          onChange={(e) => setEmail(String(e.target.value))}
         />
-        <div className="bg-black text-white px-7 py-2 rounded-3xl">
+        <button
+          type="submit"
+          className="bg-black text-white px-7 py-2 rounded-3xl cursor-pointer"
+        >
           Suscribirse
-        </div>
-      </div>
+        </button>
+      </form>
     </div>
   )
 }

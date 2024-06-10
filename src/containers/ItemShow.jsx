@@ -7,7 +7,7 @@ const ItemShow = () => {
     <Layout>
       <div className="flex flex-col justify-center items-center mt-20">
         <ItemView />
-        <div className="bg-neutral-400 w-[80%] h-[3px] mt-24 m-5"></div>
+        <div className="bg-red-500 w-[90%] h-[3px] mt-24"></div>
         <Carrusel />
       </div>
     </Layout>

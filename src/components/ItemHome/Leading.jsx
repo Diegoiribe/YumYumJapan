@@ -1,5 +1,4 @@
 import ItemLeading from './ItemLeading'
-import Items from '../../data/db'
 
 const Leading = () => {
   return (
@@ -9,9 +8,7 @@ const Leading = () => {
         <div className="bg-red-600 h-1"></div>
       </div>
       <div className="flex gap-5 w-[85%] flex-wrap justify-around ">
-        {Items.map((item) => (
-          <ItemLeading key={item.id} item={item} />
-        ))}
+        <ItemLeading />
       </div>
     </div>
   )

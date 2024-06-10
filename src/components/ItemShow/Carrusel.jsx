@@ -54,11 +54,11 @@ const Carrusel = () => {
   return (
     <div
       id="news"
-      className=" h-screen  flex flex-col  justify-center items-center"
+      className="  w-full  flex flex-col  justify-center items-center mt-5 mb-24"
     >
-      <div className="w-4/5 flex justify-between items-center">
-        <h1 className="text-3xl  text-start mac:w-4/5 phone:w-full overflow-hidden h-24">
-          OTROS PRODUCTOS
+      <div className="w-[90%] flex justify-between items-center">
+        <h1 className="text-3xl  text-start mac:w-4/5 phone:w-full overflow-hidden h-24 uppercase font-bold">
+          otros articulos
         </h1>
         {phone ? null : (
           <div className="flex gap-5 p-2">
@@ -80,7 +80,7 @@ const Carrusel = () => {
       <div className="w-full phone:h-[75%] mac:h-4/6 flex justify-end">
         <div
           ref={contentRef}
-          className="phone:w-full mac:w-[90%] phone:h-[450px] flex items-center overflow-auto scroll  gap-5 p-5"
+          className="sm:w-full sm:h-[450px] flex items-center overflow-auto scroll gap-5 p-5 pl-20"
         >
           <ItemCarrusel />
         </div>
